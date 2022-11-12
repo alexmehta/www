@@ -1,0 +1,174 @@
+hr {
+	border-style: ridge;
+	border-width: 1px;
+	border-color: #000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica", sans-serif;
+	text-align: justify;
+	hyphens: auto;
+	margin: auto;
+	padding: 1em;
+	max-width: 60em;
+	background-color: #F6F6F6;
+}
+
+pre, code {
+	font-family: "Latin Modern Mono", "Terminus", "DejaVu Sans Mono", monospace;
+}
+
+a {
+	color: #0000FF;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #F6F6F6;
+	background-color: #0000FF;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.half {
+	width: 50%;
+}
+
+.full {
+	width: 100%;
+}
+
+.right {
+	float: right;
+	padding-left: 2em;
+}
+
+.left {
+	float: left;
+	padding-right: 2em;
+}
+
+.clear {
+	clear: both;
+	padding-top: 1em;
+}
+
+div.box {
+	display: flex;
+}
+
+@media (max-width: 400px) {
+  div.box {
+    display: block;
+  }
+}
+
+div.column {
+	flex: 1;
+}
+
+.dark {
+	color: #F6F6F6;
+	background-color: black;
+}
+
+em#quote:before {
+	content: attr(english);
+}
+
+em#quote:hover:before {
+	content: '';
+}
+
+em#quote:hover:after {
+	content: attr(latin);
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+div.pub-container {
+	display: flex;
+	padding: 0.25em;
+	display: flex;
+}
+
+div.pub-container > h3 {
+	text-align: center;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+}
+
+div.pub-container > h3.canceled {
+	background-color: lightpink;
+}
+
+div.pub-container > h3.upcoming {
+	background-color: yellow;
+}
+
+span.green {
+	background-color: lightgreen;
+}
+
+span.yellow {
+	background-color: yellow;
+}
+
+span.red {
+	background-color: lightpink;
+}
+
+div.qabox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.qapicture {
+	max-width: 100%;
+	min-width: 35%;
+	flex-basis: 60%;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+div.qacontent {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+/* mobile safari >:( */
+@media screen and (max-device-width: 480px) {
+  body{
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+.myname:hover {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+a[href^="https://"]:not([href^="https://yossarian.net"]):after {
+  content: url("/res/img/external-link-ltr-icon.svg");
+}
+
+strike {
+	text-decoration-thickness: 2px;
+}
