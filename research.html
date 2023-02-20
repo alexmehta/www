@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Alexander Mehta</title>
+    <title>Research</title>
   </head>
   <body>
     <h1>research: transformers and llms. Worth the hype?</h1>
@@ -13,14 +13,32 @@
     <div>
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">To be clear: I&#39;m not criticizing OpenAI&#39;s work nor their claims.<br><br>I&#39;m trying to correct a *perception* by the public &amp; the media who see chatGPT as this incredibly new, innovative, &amp; unique technological breakthrough that is far ahead of everyone else.<br><br>It&#39;s just not.</p>&mdash; Yann LeCun (@ylecun) <a href="https://twitter.com/ylecun/status/1617921903934726144?ref_src=twsrc%5Etfw">January 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
     </div>
-    <h2>So how innovative is ChatGPT?</h2>
+    <h1>So how innovative is ChatGPT?</h1>
 
-    <p><b>Short answer: it isn't</b></p>
+    <h3><b>Short answer: it isn't</b></h3>
     <h3>Longer answer:</h3>
     <p>This is where I started doing research. I know the seminal paper in text based machine learning approaches is <a href="https://arxiv.org/abs/1706.03762">"Attention is All You Need"</a> in 2017. This paper explains the concept of attention through a new type of model called the "transformer". To skip a bunch of math and computer science, the simplist understanding of the transformer/attention are "a method for a machine to learn what to pay <i>attention</i> to".</p>
-    <p>I'm going to skip over technical details and go to results of this new (for 2017) research (I link a bunch of technical papers that I read at the end). The results showed that the model could easily understand and translate from English to German (and vice versa). In simple language, all it was shown was an English word, told to guess what the German output should be, and then told if it was right or wrong</p> 
+    <p>I'm going to skip over technical details and go to results of this new (for 2017) research (I link a bunch of technical papers that I read at the end). The results showed that the model could easily understand and translate from English to other languages(and vice versa). In simple English, all it was shown was an English word, told to guess what the output should be in another language, and then told if it was right or wrong</p> 
 
     <h2>How do we get from 2017 research to chatGPT?</h2>
+    <p>Researchers discovered that not only are these new Transformer models really good at understanding language data (and also video data, but thats a whole new topic), but that they are a perfect fit for self-supervised learning.</p>
+    <p>Self-supervised learning is the "secret sauce" of these new chatbots. Previously, I showed the example of being shown a word, and comparing the models output to the actual one. The issue with this is that you need to know the translation beforehand. Self-supervised learning gets rid of this idea completely. </p>
+    <p>The self-supervised learning method uses <strong>the data itself as both the input and the output. </strong>Now, for training an English language model, you ask the machine to predict the next word in a sentence, rather than an answer. Part of the input becomes the answer. This Facebook AI research blog,<a href="https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/"> "Self-supervised learning: The dark matter of intelligence"</a> explains the concept in depth. Because of the amount of data possible now, it led to the birth of LLMs, or Large Language Models. Methods like self-supervised learning are why you commonly hear the growing importance of data. Simply, data is learning. The more data, the more you learn. </p>
+    <p>This cake analogy from <a href="https://www.youtube.com/watch?v=Ount2Y4qxQo&t=1072s">NIPS</a> illustrates it perfectly</p>
+    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*bvMhd_xpVxfJYoKXYp5hug.png">
 
+
+    <h2>So what does this mean for ChatGPT?</h2>
+    <p>Knowing more about the technology behind ChatGPT, we now can understand that it's simply trying to get the best next word. ChatGPT really isn't understanding the deeper meaning when you ask it to tell a joke, writing an email reply, or an essay. It's really just finding the next best word that makes the sentence sound normal. </p>
+    <p>ChatGPT isn't some terminator robot that will take over the world, but a tool that makes text that sounds convincing, even when it isn't. The danger isn't in ChatGPT itself, but the misuse and misunderstanding of it as something greater than a statistical machine. </p>
+  
+    <h2>References</h2>
+    <p>
+      <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a>
+      <br>
+      <a href="https://arxiv.org/abs/2005.14165">Language Models are Few-Shot Learners</a>
+      <br>
+      <a href="https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/">Self-supervised learning: The dark matter of intelligence<a>
+    </p>
   </body>
 </html>
