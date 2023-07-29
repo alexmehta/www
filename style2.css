@@ -1,17 +1,18 @@
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
 }
 a {
-	color: #0000FF;
-	background-color: transparent;
-	text-decoration: none;
+  color: #0000ff;
+  background-color: transparent;
+  text-decoration: none;
 }
 body {
-	font-family: "Helvetica", sans-serif;
-	text-align: justify;
-	hyphens: auto;
-	margin: auto;
-	padding: 1em;
-	background-color: #F6F6F6;
+  font-family: "Helvetica", sans-serif;
+  text-align: justify;
+  hyphens: auto;
+  margin: auto;
+  padding: 1em;
+  background-color: #f6f6f6;
 }
-
